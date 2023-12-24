@@ -25,7 +25,7 @@ suit = st.selectbox(
 
 button = st.button('Add')
 if button:
-   action = f"{player}{type}{num}{suit}"
+   action = f"{player} {type} {num} {suit}"
    st.session_state.actions.append(action)
    player, suit, num = [None]*3
 st.write(st.session_state.actions)
